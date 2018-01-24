@@ -56,40 +56,6 @@ $.getJSON("http://index1.homeflow.co.uk/properties?api_key=77467477edfd2689cd777
 
 });
 
-
-/*$(document).ready(function(){
-	
-$.getJSON("http://index1.homeflow.co.uk/places?api_key=77467477edfd2689cd77796a2c4b019f&search[name]=elstead", function(data) {
-    for( var index in data.elements ) {
-        $('#locationDropDown ul').append('<li><a href="#" data-maker="'+data.elements[index].name+'</a></li>');
-    }
-  });
-});*/
-
-/*$(document).ready(function () {
-	$('.locationDropDown').on('click',
-		function () {
-			$.getJSON("http://index1.homeflow.co.uk/places?api_key=77467477edfd2689cd77796a2c4b019f&search[name]=elstead", function (data) {
-				for (var index in data.elements) {
-					$('#locationDropDown ul').append('<li><a href="#" data-maker="' + data.elements[index].name + '</a></li>');
-				}
-			});
-			$(this).dropdown('toggle');
-		}
-	);*/
-
-/*function getTheLocation() {
-	alert("hello barry");
-	(function(){
-	$.getJSON("http://index1.homeflow.co.uk/places?api_key=77467477edfd2689cd77796a2c4b019f&search[name]=elstead", function (data) {
-				for (var index in data.elements) {
-					$('#inputGroup-sizing-sm').append( data.elements[index].name );
-				}
-			});
-	})
-}*/
-	
-//});
 function doTheSearch() {
 	alert('searching...');
 }
