@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sonar</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./homeflow.js" type="text/javascript"></script>
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
+
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <h1>
+      <p>Sonar</p>
+    </h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>
+        <p>Search</p>
+      </h3>
+		<!--div class="dropdownz">
+<button onclick="getTheLocation()">Location</button>		  
+      </div>
+		<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Location will appear here...</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+</div-->
+	  <div class="form-group">
+        <label class="control-label">Location</label>
+        <div class="selectContainer">
+            <select class="form-control" id="location">	
+                <!--option>Elstead</option-->		
+            </select>
+        </div>
+    </div>
+	  <div class="form-group">
+        <label class="control-label">Min Price</label>
+        <div class="selectContainer">
+            <select class="form-control">
+                <option>£100,000</option>
+                <option>£200,000</option>
+                <option>£300,000</option>
+                <option>£400,000</option>
+				<option>£500,000</option>
+            </select>
+        </div>
+    </div>
+	  <div class="form-group">
+        <label class="control-label">Max Price</label>
+        <div class="selectContainer">
+            <select class="form-control">
+                <option>£600,000</option>
+                <option>£700,000</option>
+                <option>£800,000</option>
+                <option>£900,000</option>
+				<option>£1,000,000</option>
+            </select>
+        </div>
+    </div>
+	  <div class="form-group">
+        <label class="control-label">Beds</label>
+        <div class="selectContainer">
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+				<option>5</option>
+            </select>
+        </div>
+    </div>
+	<button type="button" class="btn btn-primary">Search</button>
+      <!--div class="dropdown">  
+          <button class="btn btn-secondary dropdown-toggle" type="button" 
+  id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Other </button>
+ 
+      </div-->
+    </div>
+    <div class="col-sm-3">
+      <h3>
+        <p>Results</p>
+      </h3>
+      <!--div class="card"-->
+        <!--h3 class="card-title"-->
+		<h4>
+          <p id ="id_search">House</p>
+        </h4>
+        <!--img class="card-img-top" src="" alt="House"-->
+        <!--div class="card-block">
+          <p class="card-text">Some quick example text.</p>
+        </div-->
+      <!--/div-->
+        <button type="button" class="btn btn-primary">More</button>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <h3 class="card-title">
+          <p id="id">House</p>
+        </h3>
+        <img class="card-img-top" src="" alt="House">
+        <div class="card-block">
+          <p class="card-text"  id ="description">Some quick example text.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <h4>
+        <p id="address">Location</p>
+      </h4>
+	  <h4>
+        <p id="price">Price</p>
+      </h4>
+      <h4>
+        <p id="bedrooms">Bedrooms</p>
+      </h4>
+    <!--img src="" alt="Agency"-->
+	 <h4>
+        <p id="agency">Agency</p>
+      </h4>
+    <p>
+	<button type="button" class="btn btn-primary">Contact</button>
+	</p>
+	<p>
+    <button type="button" class="btn btn-primary">Save</button>
+	</p>
+      <h4>
+        <p id="phone">Number</p>
+      </h4>
+    </div>
+  </div>
+</div>
+</body>
+</html>
